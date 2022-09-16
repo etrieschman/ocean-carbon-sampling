@@ -1,4 +1,4 @@
-# ocean-carbon-sampling: Can remote sensing features improve estimates of ocean carbon chemistry
+# ocean-carbon-sampling: Can remote sensing features improve estimates of ocean carbon chemistry?
 
 ## Usage
 This research was conducted for academic purposes
