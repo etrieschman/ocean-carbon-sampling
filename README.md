@@ -35,10 +35,10 @@ To evaluate how remote sensing might improve estimates of changes in ocean carbo
 I evaluate how remote sensing data might be used to stratify sampling regions and improve estimated changes in pCO2. I first identify the remote sensing features most correlated with pCO2. Next, I define sample regions on each of the coasts in the United States (Pacific, Gulf, and Atlantic) and stratify those regions using the identified remote sensing features. Then, I create simple and stratified random sampling designs within these sampling regions, and lastly I compare the precision of the estimated pCO2 from each design using simulated pCO2 data. If remote sensing features can be helpful in stratified sampling designs, I expect increased precision of pCO2 estimates in this scenario. 
 
 ### Random sample design
-[Random sample designs](results/fig_rs.png)
+![Random sample designs](results/fig_rs.png)
 
 ### Stratified random sample design
-[Stratified random sample designs](results/fig_stratified_rs.png)
+![Stratified random sample designs](results/fig_stratified_rs.png)
 
 ## Predicting pCO2 with remote sensing
 To evaluate how remote sensing might improve estimates of changes in ocean carbon chemistry, I next consider constructing a regression model using remote sensing features to predict changes in pCO2. I first construct an analytical dataset with the finest resolution data available in this study – monthly data at a 4km resolution. This dataset is the same dataset I use in earlier analysis, with the inclusion of monthly sea surface temperature and chlorophyll a values. 
@@ -48,6 +48,6 @@ Next, I run a linear regression of all available features on pCO2 to gain insigh
 Lastly, I implement a D-optimal sample design within the sample regions I create in the first part of my analysis. The purpose of this sample design is to illustrate how I might choose sample locations with the goal of minimizing the standard error of the coefficients of a regression model of remote sensing features on pCO2. Technically, D-optimal sample design is a convex optimization problem that seeks to minimize the log-determinant of the variance of all available experiment data, which, in this case, is all available combinations of remote sensing features (Boyd). The optimization problem returns the precise set of available combinations of remote sensing features that should minimize the coefficients of a linear model.
 
 ## D-Optimal sample design
-[Doptimal sample design](results/fig_doptimal.png)
+![Doptimal sample design](results/fig_doptimal.png)
 
 
